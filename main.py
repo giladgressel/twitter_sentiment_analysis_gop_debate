@@ -1,24 +1,13 @@
 import re
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
+sns.set(color_codes=True)
 
-sns.set(color_codes = True)
+from preprocessing.load_data import load_gop_data
 
-data_gop = pd.read_csv('gop_Sentiment.csv')
-print "GOP Dataset has {} rows, {} columns".format(*data_gop.shape)  # * unpacks the shape tuple
-
-#A lot of information we really aren't interested in, so take a look at the columns with their index.
-header_index = [(i,z) for z,i in enumerate(data_gop.columns.view())]
-print header_index
-
-#Now we can drop the ones we won't be using. We are keeping ID-0, sentiment-5,  text-15.
-#set the index to ' id' and the the other two columns as sentiment and tweet
-df_gop = pd.DataFrame(index = data_gop[' id'])
-df_gop = data_gop[['sentiment','text']].copy()
-print df_gop.head()
+df_gop = load_gop_data('../data/gop_Sentiment.csv')
 
 #let's look for what kinds of unique values we have in our sentiment scoring category.
 # We should also check if we have NaN's that we'd want to deal with
