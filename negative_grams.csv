@@ -1,0 +1,11 @@
+,1-grams,Count,2-grams,Count,3-grams,Count
+0,"(#gopdebate,)",2614,"(🇺🇸, #gopdebate)",703,"(fair, &, balanced)",137
+1,"(?,)",1162,"(fox, news)",464,"(music, hear, dont)",125
+2,"(🇺🇸,)",902,"(?, #gopdebate)",231,"(reminds, elevator, music)",125
+3,"(#gopdebates,)",862,"(jeb, bush)",211,"(bush, reminds, elevator)",125
+4,"(fox,)",777,"(chris, wallace)",204,"(listen, 🇺🇸, #gopdebate)",125
+5,"(trump,)",663,"(last, night)",199,"(jeb, bush, reminds)",125
+6,"(&,)",520,"(donald, trump)",165,"(dont, listen, 🇺🇸)",125
+7,"(!,)",504,"(#gopdebate, #gopdebates)",145,"(hear, dont, listen)",125
+8,"(news,)",490,"(fair, &)",139,"(elevator, music, hear)",125
+9,"(just,)",452,"(&, balanced)",137,"(debate, 🇺🇸, #gopdebate)",113
